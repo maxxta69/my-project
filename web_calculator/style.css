@@ -1,0 +1,43 @@
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+ 
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+ 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+ 
+.buttons button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+ 
+button[onclick="clearDisplay()"] {
+    grid-column: 1 / -3;
+}
+
+.buttons > .plus_button, .equal_button {
+    grid-row: span 2;
+}
+
+.buttons button:hover {
+    background-color: #aa9494;
+}
