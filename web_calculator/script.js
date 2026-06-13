@@ -7,13 +7,18 @@ function clearDisplay() {
     const display = document.getElementById('display');
     display.value = '';
 }
- 
-function calculate() {
+
+function calculate(){
     const display = document.getElementById('display');
     try {
-        const result = eval(display.value);
+        // const expression = display.value;
+        const calc = (expression) => {
+            return new Function(`return ${expression}`)();
+        };
+        const result = calc(display.value);
         display.value = result;
-    } catch (error) {
-        display.value = 'Er';
+    } catch (error){
+        display.value = err;
     }
-}
+};
+
