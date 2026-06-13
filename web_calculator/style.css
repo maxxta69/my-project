@@ -18,7 +18,7 @@
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 12px;
 }
  
 .buttons button {
@@ -32,12 +32,17 @@
  
 button[onclick="clearDisplay()"] {
     grid-column: 1 / -3;
+    background: rgb(112, 105, 105);
+    padding: 20px;
+    font-size: 30px;
 }
 
-.buttons > .plus_button, .equal_button {
+button[onclick="appendToDisplay('+')"], button[onclick="calculate()"] {
     grid-row: span 2;
+    background: orange;
+    font-size: 30px;
 }
 
 .buttons button:hover {
-    background-color: #aa9494;
+    background-color: #89877b;
 }
