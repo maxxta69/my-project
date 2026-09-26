@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     //VERIFY THE ARGUMENT PASSED BY USER
     if(argc < 2)
     {
-        printf("ERROR: Invalid/No argument was passed\n");
+        fprintf(stderr," usage: %s your_file(The file should be in the same folder where its being compiled)\n", argv[0]);
         return 1;
     }
 
