@@ -85,8 +85,8 @@ int main(void)
         perror("Error with received messages");
     }
 
-    close(server_socket);
     close(client_socket);
+    close(server_socket);
 
     return 0;
 }
