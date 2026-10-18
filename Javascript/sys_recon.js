@@ -22,4 +22,3 @@ console.log("Home directory: ", homedir);
 console.log("Shell: ", shell);
 console.log("Total Memory(MB): ", total_memory);
 console.log("Free memory(MB): ", free_memory);
-// const Load_average = os.loadavg();
