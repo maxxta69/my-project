@@ -3,10 +3,8 @@ export function Bytes_to_KB(byte) {
     console.error("Invalid figure!");
     return;
   }
-  //convert
-  const result = byte / 2 ** 10;
 
-  //return
+  const result = byte / 2 ** 10;
   return result;
 }
 
@@ -25,6 +23,7 @@ export function Bytes_to_GB(byte) {
     console.error("Invalid figure!");
     return;
   }
+
   const result = Number((byte / 2 ** 30).toFixed(3));
   return result;
 }
