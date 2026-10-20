@@ -64,7 +64,7 @@ try {
 }
 
 try {
-  const { One, Five, Fifteen } = os.loadavg();
+  const [One, Five, Fifteen] = os.loadavg();
   console.log(
     `Load average: 1min = ${One}, 5mins = ${Five}, 15mins = ${Fifteen}`,
   );
